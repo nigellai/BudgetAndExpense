@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.EditCategoryActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/hint_category_name"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hint_transaction_choose_currency"/>
+
+        <ToggleButton
+            android:id="@+id/category_currency_toggle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textOff="@string/hint_transaction_currency_NZD"
+            android:textOn="@string/hint_transaction_currency_USD" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextBudget"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_category_budget"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/cateogory_usd_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hint_transaction_transferred_nzd"/>
+
+        <TextView
+            android:id="@+id/category_transffered_NZD"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hint_category_color"/>
+        <Spinner
+            android:id="@+id/category_color_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:text="@string/button_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:text="@string/button_cancel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"/>
+</LinearLayout>

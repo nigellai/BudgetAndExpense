@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hint_transaction_choose_currency"/>
+
+        <ToggleButton
+            android:id="@+id/currency_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textOff="@string/hint_transaction_currency_NZD"
+            android:textOn="@string/hint_transaction_currency_USD" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/transaction_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/hint_transaction_value"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/usd_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_transaction_transferred_nzd"/>
+
+        <TextView
+            android:id="@+id/transaction_transffered_NZD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hint_transaction_date"/>
+
+        <Button
+            android:id="@+id/transactionDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_transaction_date_button">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hint_transaction_cateogrty"/>
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTransactionAdd"
+        android:text="@string/button_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:id="@+id/buttonTransactionCancel"
+        android:text="@string/button_cancel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

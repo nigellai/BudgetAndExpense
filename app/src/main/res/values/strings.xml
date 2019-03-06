@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Budget And Expense</string>
+    <string name="title_transaction">Transaction</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_category">Category</string>
+    <string name="title_category_list">Category List</string>
+    <string name="title_activity_edit_category">EditCategoryActivity</string>
+    <string name="title_activity_edit_transaction">EditTransactionActivity</string>
+    <string name="button_edit">ADD</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="hint_category_name">Please input category name</string>
+    <string name="hint_category_color">Please input category color</string>
+    <string name="hint_category_budget">Please input category budget by month</string>
+    <string name="hint_transaction_choose_currency">Please choose your currency</string>
+    <string name="hint_transaction_currency_NZD">$NZD</string>
+    <string name="hint_transaction_currency_USD">$USD</string>
+    <string name="hint_transaction_date">Please choose your transaction date</string>
+    <string name="hint_transaction_cateogrty">Please choose your transaction category</string>
+    <string name="hint_transaction_transferred_nzd">Your transferred NZD value is: </string>
+    <string name="hint_transaction_date_button">Transaction Date</string>
+    <string name="hint_transaction_category_button">Transaction Category</string>
+    <string name="hint_transaction_value">Please input your transaction value</string>
+    <string name="hint_transaction_">Please choose your transaction date</string>
+    <string name="title_transaction_creation">Please input your trasaction </string>
+    <string name="currency_error_response_message">Response error, please try again later</string>
+    <string name="row_category_name">Category:     </string>
+    <string name="row_budget_name">Budget:     </string>
+    <string name="row_colour_name">Colour:     </string>
+    <string name="exceed_indicator">EXCEED!</string>
+    <string name="category_title">Category Budget Summary</string>
+    <string name="transaction_title_category">Transaction Category:</string>
+    <string name="transaction_title_value">Value:</string>
+    <string name="transaction_title_date">Transaction Date:</string>
+    <string name="dialog_delete_transaction">Delete this transaction?</string>
+    <string name="ok_button">YES</string>
+    <string name="cancel_button">CANCEL</string>
+</resources>
